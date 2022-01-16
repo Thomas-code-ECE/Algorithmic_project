@@ -84,8 +84,11 @@ def reccursive_pythagoras_tree(turtle_sing,size,level,angle):
         # Call the function to compute the right branch
         reccursive_pythagoras_tree(turtle_sing,rightSize,level-1,angle)
 
+# Choose the depth of the tree
 depthTree = 10
+# Choose the angle formed by the left square and the center square
 angle = 50
+# Call the reccursive function
 reccursive_pythagoras_tree(turtle,50,depthTree,angle)
 screen.tracer(True)
 screen.exitonclick()
